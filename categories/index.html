@@ -469,6 +469,10 @@
           
 
   
+    <div class="comments" id="comments">
+    </div>
+
+  
 
 
 
@@ -595,7 +599,7 @@
             <div class="links-of-blogroll motion-element links-of-blogroll-block">
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-link"></i>
-                Links
+                友情链接
               </div>
               <ul class="links-of-blogroll-list">
                 
@@ -613,6 +617,14 @@
                 
                   <li class="links-of-blogroll-item">
                     <a href="http://www.mackxin.com/nav.html" title="http://www.mackxin.com/nav.html" rel="noopener" target="_blank">馨客栈前端导航</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://e.xitu.io/" title="https://e.xitu.io/" rel="noopener" target="_blank">掘金酱</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.iocoder.cn/?bilibili&hexo" title="http://www.iocoder.cn/?bilibili&hexo" rel="noopener" target="_blank">芋道源码</a>
                   </li>
                 
               </ul>
@@ -793,6 +805,35 @@
 
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: '3KA58YAi1IRikgyKvVqErIpJ-gzGzoHsz',
+    appKey: 'NYrOaaIlN7lWxtubj1ItDRO9',
+    placeholder: '赶快来抢沙发吧!',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+</script>
+
+
 
 
   
